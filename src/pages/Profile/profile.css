@@ -1,0 +1,123 @@
+.container  {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.container label {
+    line-height: 1;
+}
+
+.label-avatar {
+    display: block;
+    display: grid;
+    max-width: 200px !important;
+    height: 200px;
+    place-items: center;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.label-avatar input {
+    display: none;
+}
+
+.label-avatar:hover {
+    filter: brightness(.7);
+}
+
+.label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: .7;
+}
+
+.label-avatar img {
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.form-profile input, textarea, select{
+    margin-bottom: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 10px;
+    resize: none;
+}
+
+.form-profile input,
+.form-profile label,
+.form-profile button {
+    max-width: 500px;
+    width: 100%;
+    font-size: 1em;
+}
+
+.form-profile input:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+.logout-btn {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: red;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 0, 0, .1);
+}
+
+.savingData::after {
+    content: "Salvando...";
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    opacity: .6;
+    user-select: none;
+    cursor: wait;
+    color: white;
+    display: grid;
+    place-items: center;
+    animation: changeContent 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes changeContent {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.savingData > * {
+    filter: blur(5px);
+    user-select: none;
+}

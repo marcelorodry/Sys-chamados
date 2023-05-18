@@ -1,0 +1,91 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+}
+
+#bg-close {
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    opacity: .7;
+}
+
+.modal .container {
+    width: calc(100% - 20px);
+    max-width: 500px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.modal .container .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .row-badge {
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.modal h3 {
+    margin-top: 20px;
+}
+
+.modal h2 {
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.chamado-data {
+    width: 100%;
+    color: #777;
+    margin-bottom: 20px;
+    font-size: .8em;
+}
+
+.row span {
+    color: #000;
+    font-weight: bold;
+}
+
+.row span a {
+    font-weight: normal;
+    color: #777;
+}
+
+.modal h3 ~ p {
+    color: #777;
+    white-space: pre-wrap;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    opacity: .7;
+}
+
+.close-btn svg {
+    color: #000;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}

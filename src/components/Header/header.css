@@ -1,0 +1,140 @@
+.sidebar {
+    width: 200px;
+    background-color: #181c2e;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar div {
+    background: url('../../assets/cover.png');
+    background-color: #181c2e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar div img {
+    border-radius: 50%;
+    width: 60%;
+    filter: drop-shadow(2px 3px 6px #121212);
+    -webkit-filter: drop-shadow(2px 3px 6px #121212);
+    object-fit: cover;
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 16px;
+    width: 100%;
+    transition: all .3s ease;
+    opacity: .8;
+}
+
+.sidebar a svg {
+    fill: white;
+    margin-right: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px;
+}
+
+.sidebar button {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: all .3s ease;
+    color: #808496;
+    z-index: 999;
+}
+
+.sidebar button span {
+    font-size: .8em;
+}
+
+.sidebar button svg {
+    margin-right: 4px;
+}
+
+.sidebar button:hover {
+    color: rgb(223, 74, 74);
+    background-color: rgba(223, 74, 74, .2);
+}
+
+@media screen and (max-width: 700px) {
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    .sidebar {
+        width: 100% ;
+        position: relative;
+        height: auto;
+        max-width: none;
+        flex-direction: row;
+        font-size: .8em;
+        padding: 0 6px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar a {
+        justify-content: center;
+        font-size: .9em;
+        text-align: center;
+    }
+
+    .sidebar div {
+        display: none;
+    }
+
+    .sidebar svg {
+        display: none;
+        margin: 0;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .sidebar button {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a svg {
+        display: block;
+    }
+
+    .sidebar a span {
+        display: none;
+    }
+
+    .sidebar a {
+       justify-content: space-around;
+       padding: 10px 2px;
+    }
+
+}

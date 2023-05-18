@@ -1,0 +1,47 @@
+.notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    text-align: center;
+}
+
+.notfound h1 {
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 800;
+    opacity: .1;
+}
+
+.notfound span {
+    font-size: 10em;
+    font-weight: bold;
+    line-height: 1;
+    opacity: .1;
+}
+
+@media screen and (max-width: 700px) {
+    .notfound {
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .notfound h1 {
+        font-size: 2em;
+    }
+
+    .notfound span {
+        font-size: 5em;
+    }
+
+}

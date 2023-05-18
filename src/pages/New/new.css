@@ -1,0 +1,90 @@
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.status-title {
+    width: 100%;
+    max-width: 500px;
+}
+
+.status {
+    max-width: 500px;
+    width: 100%;
+}
+
+.status label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 100%;
+    white-space: nowrap;
+}
+
+form select {
+    cursor: pointer;
+}
+
+.status input {
+    width: 10px;
+    width: 0;
+    cursor: pointer;
+}
+
+.status input::after {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    outline: 1px solid #ccc;
+    border-radius: 50%;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.status input:checked:after {
+    background-color: #6495ed;
+    outline-color: #6495ed;
+}
+
+form textarea {
+    height: 150px;
+    padding: 10px;
+}
+
+select:disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #eee;
+    color: #000;
+    font-weight: 500;
+    font-weight: normal;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+    .status {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
+    .status label:not(:last-child) {
+        border-bottom: 1px solid #eee;
+    }
+}
