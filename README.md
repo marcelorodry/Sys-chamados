@@ -1,6 +1,6 @@
 # chamados_sys
 
-Sistema funcional voltado para técnicos de TI registrarem chamados de clientes. Este projeto foi criado em <b>React</b> seguindo orientações do curso de "<i>React Js do zero ao avançado na prática</i>" presente na <b>Udemy.com</b> e instruído por <b>Matheus Fraga</b>.
+Sistema funcional voltado para técnicos de TI registrarem chamados de clientes.
 
 ##  Bibliotecas utilizadas
 * firebase@8.8.1 - conexão com o Firebase para persistência dos dados e autenticação dos usuários;
