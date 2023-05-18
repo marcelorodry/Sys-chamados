@@ -10,4 +10,4 @@ Sistema funcional voltado para técnicos de TI registrarem chamados de clientes.
 * react-toastify@9.0.4 - lib voltada para alertas visuais na aplicação.
 
 ## Link para utilização
-<a href='https://dxxgo.github.io/chamados_sys/'>Clique aqui</a>
+<a href='https://github.com/marcelorodry/Sys-chamados.git'>Clique aqui</a>
