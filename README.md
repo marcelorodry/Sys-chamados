@@ -1,6 +1,6 @@
 # chamados_sys
 
-Sistema funcional voltado para técnicos de TI registrarem chamados de clientes.
+Sistema funcional voltado para técnicos de TI registrarem chamados de clientes. 
 
 ##  Bibliotecas utilizadas
 * firebase@8.8.1 - conexão com o Firebase para persistência dos dados e autenticação dos usuários;
